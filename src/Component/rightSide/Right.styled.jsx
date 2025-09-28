@@ -50,8 +50,8 @@ export const AvatarMedium = styled.img`
 `;
 
 export const AvatarMed = styled.img`
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   margin-bottom: 12%;
 `;
