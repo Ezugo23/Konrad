@@ -59,7 +59,7 @@ const posts = [
     topic: "Clean Compiler",
     title: "10 Java Collections Tricks Only Seniors Know",
     subtitle: "If you've been coding in Java for a while, you probably use List, Set, and Map every single day. But here's the thing: most ...",
-    author: "Paschal",
+    author: "John Doe",
     image: Java,
     timeAgo: "3d ago",
     handClaps: "52k",

@@ -88,7 +88,7 @@ export const ImageWrapper = styled.div`
     width: 5rem;
     height: 4rem;
     object-fit: cover;
-    margin-top: 20%;
+    margin-top: 10%;
     border-radius: 0.25rem;
     
 
