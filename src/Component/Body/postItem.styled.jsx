@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // Container for the whole post item
 export const PostContainer = styled.div`
-  border-bottom: 1px solid #d1d5db; // tailwind gray-300
+  border-bottom: 1px solid #d1d5db; 
   padding-bottom: 0.5rem;
 `;
 
@@ -29,11 +29,11 @@ export const Tag = styled.p`
 
 // Subtitle text
 export const Subtitle = styled.p`
-  color: #6b7280; // gray-500
+  color: #6b7280;
   font-family: sans-serif;
-  font-size: 0.75rem; // xs
+  font-size: 0.75rem; 
   @media (min-width: 640px) {
-    font-size: 0.875rem; // sm
+    font-size: 0.875rem; 
   }
 `;
 

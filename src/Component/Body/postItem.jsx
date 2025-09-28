@@ -11,7 +11,6 @@ import {
   BodySubtitle,
   ImageWrapper,
   IconsRow,
-  ClappedText,
   RightIconsWrapper
 } from './postItem.styled'
 

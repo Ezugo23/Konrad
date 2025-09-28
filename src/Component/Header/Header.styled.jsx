@@ -41,8 +41,8 @@ export const TopBar = styled.div`
 export const TabActive = styled.p`
   font-family: sans-serif;
   border-bottom: 3px solid black;
-  margin-bottom: 0;       /* remove extra space below */
-  padding-top: 0;         /* remove top padding */
+  margin-bottom: 0; 
+  padding-top: 0;  
   letter-spacing: normal;
 `;
 
@@ -50,7 +50,7 @@ export const Tab = styled.p`
   font-family: sans-serif;
   color: #6b7280;
   cursor: pointer;
-  padding-top: 0;         /* remove top padding */
+  padding-top: 0; 
   letter-spacing: normal;
   transition: color 0.2s ease;
 

@@ -86,7 +86,7 @@ export const RightSection = styled.div`
   gap: 1.25rem;
 
    @media (max-width: 767px) {
-    gap: 0.5rem; /* smaller gap between search and avatar */
+    gap: 0.5rem; 
   }
 `;
 
@@ -98,16 +98,16 @@ export const WriteButton = styled.button`
   font-size: 0.875rem;
   font-family: sans-serif;
   cursor: pointer;
-  background: transparent;  /* remove gray background */
-  border: none;             /* remove default border */
-  padding: 0;               /* remove extra padding if needed */
+  background: transparent; 
+  border: none;          
+  padding: 0;  
 
   &:hover {
     color: black;
   }
 
   span {
-    color: #374151; /* make text same color as icon */
+    color: #374151; 
   }
 
   @media (min-width: 768px) {
