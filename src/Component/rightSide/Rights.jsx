@@ -129,15 +129,15 @@ export default function Right() {
         <Button label="Follow" variant="follow" />
       </FollowRow>
 
-      <MutedText mt="16px">See more suggestions</MutedText>
+      <MutedText>See more suggestions</MutedText>
 
-      <SectionTitle mt="24px">Reading list</SectionTitle>
-      <SmallText mt="12px">
-        Click <BookmarkIcon className="w-3 h-3 inline" /> on any story to easily
+      <SectionTitle style={{marginTop:'20px'}}>Reading list</SectionTitle>
+      <SmallText>
+        Click <BookmarkIcon style={{width:'3%', height:'4%', display:'inline'}} /> on any story to easily
         add it to your reading list or a custom list that you can share.
       </SmallText>
 
-      <FooterText mt="32px">
+      <FooterText>
         Help Status About Careers Press Blog Privacy Rules just one word Terms
         Text to speech
       </FooterText>

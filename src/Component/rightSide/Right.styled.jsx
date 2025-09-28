@@ -87,7 +87,7 @@ export const SmallText = styled.p`
   font-size: 0.75rem;
   color: #6b7280;
   font-weight: 500;
-  margin-top: ${(p) => p.mt || "0"};
+  margin-top: 8px;
 
   .highlight {
     color: #1f2937;
@@ -99,18 +99,19 @@ export const NameText = styled.p`
   font-size: 1rem;
   font-weight: 600;
   color: #000;
+  margin-top: -26px
 `;
 
 export const MutedText = styled.p`
   font-size: 0.875rem;
   color: #6b7280;
-  margin-top: ${(p) => p.mt || "0"};
+  margin-top: 16px;
 `;
 
 export const FooterText = styled.p`
   font-size: 0.75rem;
   color: #6b7280;
-  margin-top: ${(p) => p.mt || "0"};
+  margin-top: 4%;
 `;
 
 export const FollowRow = styled.div`
