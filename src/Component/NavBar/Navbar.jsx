@@ -9,6 +9,7 @@ import {
   RightSection,
   WriteButton,
   BellWrapper,
+  SearchIcon,
   NotificationDot,
   ProfileAvatar,
 } from './navbar.styled'
@@ -24,14 +25,12 @@ export default function navbar() {
 
       {/* Search Input (desktop only) */}
       <SearchWrapper>
-        <MagnifyingGlassIcon className="search-icon" />
+        <SearchIcon as={MagnifyingGlassIcon} />
         <SearchInput type="text" placeholder="Search" />
       </SearchWrapper>
 
       {/* Search Icon (mobile only) */}
-      <MobileSearchIcon>
-        <MagnifyingGlassIcon className="icon" />
-      </MobileSearchIcon>
+      
 
       {/* Right Section */}
       <RightSection>
@@ -46,6 +45,10 @@ export default function navbar() {
           <BellIcon className="icon" />
           <NotificationDot />
         </BellWrapper>
+
+         <MobileSearchIcon>
+    <MagnifyingGlassIcon className="icon" />
+        </MobileSearchIcon>
 
         {/* Avatar */}
         <ProfileAvatar

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 // Container for the whole post item
 export const PostContainer = styled.div`
-  margin-top: 1.5rem;
   border-bottom: 1px solid #d1d5db; // tailwind gray-300
   padding-bottom: 0.5rem;
 `;
@@ -43,8 +42,8 @@ export const BodyContent = styled.div`
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: -20px;
   align-items: flex-start;
-  margin-top: 1.25rem;
 `;
 
 // Left text container
@@ -124,3 +123,19 @@ export const RightIconsWrapper = styled.div`
     padding-right: 20px
   }
 `;
+
+export const ClappedText = styled.p`
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  color: #374151;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  span {
+    font-weight: 600;
+    color: black;
+  }
+`

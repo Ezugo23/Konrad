@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 1.75rem;
+  margin-top: -0.10%;
   max-width: 56rem;
   padding-left: 1.75rem;
 
@@ -24,6 +24,8 @@ export const Container = styled.div`
 export const TopBar = styled.div`
   display: flex;
   gap: 1.25rem;
+  margin-top: -2px;
+  
   border-bottom: 1px solid #e5e7eb;
   font-size: 0.875rem; 
 
@@ -38,17 +40,17 @@ export const TopBar = styled.div`
 
 export const TabActive = styled.p`
   font-family: sans-serif;
-  border-bottom: 4px solid black;
-  margin-bottom: -2px; 
-  padding-bottom: 0.5rem; 
+  border-bottom: 3px solid black;
+  margin-bottom: 0;       /* remove extra space below */
+  padding-top: 0;         /* remove top padding */
   letter-spacing: normal;
 `;
 
 export const Tab = styled.p`
   font-family: sans-serif;
-  color: #6b7280; 
+  color: #6b7280;
   cursor: pointer;
-  padding-bottom: 0.5rem;
+  padding-top: 0;         /* remove top padding */
   letter-spacing: normal;
   transition: color 0.2s ease;
 

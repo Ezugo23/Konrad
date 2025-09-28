@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
-  margin-top: 0.5rem;
+  margin-top: -10px;
   padding: 0 1.25rem;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 0.5rem;
 
   .icon {
     height: 1.5rem;
@@ -34,25 +33,25 @@ export const Title = styled.p`
 
 export const SearchWrapper = styled.div`
   position: relative;
-  margin-left: 1.5rem;
+  margin-left: 10px;
   display: none;
 
   @media (min-width: 768px) {
     display: block;
   }
+`;
 
-  .search-icon {
-    position: absolute;
-    left: 0.75rem;
-    top: 0.65rem;
-    height: 1.25rem;
-    width: 1.25rem;
-    color: #9ca3af;
-  }
+export const SearchIcon = styled.div`
+  position: absolute;
+  left: 0.75rem;
+  top: 0.80rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #9ca3af;
 `;
 
 export const SearchInput = styled.input`
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   padding-left: 2.5rem;
   border-radius: 9999px;
   background-color: #f3f4f6; 
@@ -67,9 +66,16 @@ export const SearchInput = styled.input`
 
 export const MobileSearchIcon = styled.div`
   margin-left: 1rem;
+  margin-top: 0.60rem;
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  /* Move search beside profile on small screens */
+  @media (max-width: 767px) {
+    order: 1;
+    margin-top: 0;
   }
 `;
 
@@ -78,6 +84,10 @@ export const RightSection = styled.div`
   display: flex;
   align-items: center;
   gap: 1.25rem;
+
+   @media (max-width: 767px) {
+    gap: 0.5rem; /* smaller gap between search and avatar */
+  }
 `;
 
 export const WriteButton = styled.button`
@@ -88,13 +98,16 @@ export const WriteButton = styled.button`
   font-size: 0.875rem;
   font-family: sans-serif;
   cursor: pointer;
+  background: transparent;  /* remove gray background */
+  border: none;             /* remove default border */
+  padding: 0;               /* remove extra padding if needed */
 
   &:hover {
     color: black;
   }
 
   span {
-    color: #9ca3af; 
+    color: #374151; /* make text same color as icon */
   }
 
   @media (min-width: 768px) {
@@ -104,6 +117,10 @@ export const WriteButton = styled.button`
 
 export const BellWrapper = styled.div`
   position: relative;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const NotificationDot = styled.span`
@@ -122,4 +139,8 @@ export const ProfileAvatar = styled.img`
   width: 2rem;
   border-radius: 9999px;
   background-color: #1f2937; 
+
+  @media (max-width: 767px) {
+  order: 2;
+  }
 `;

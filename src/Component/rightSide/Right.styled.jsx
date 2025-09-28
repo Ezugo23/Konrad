@@ -40,7 +40,7 @@ export const AvatarSmallRounded = styled.img`
   height: 1.5rem;
   border-radius: 0.25rem;
   background-color: #e5e7eb;
-  margin-bottom: 20%;
+  margin-bottom: 13%;
 `;
 
 export const AvatarMedium = styled.img`
@@ -80,14 +80,19 @@ export const MediumText = styled.p`
   font-size: 0.75rem;
   font-weight: 500;
   color: #1f2937;
-  margin-top: ${(p) => p.mt || "0"};
+`;
+
+export const MedText = styled.p`
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-top:-10px;
 `;
 
 export const SmallText = styled.p`
   font-size: 0.75rem;
   color: #6b7280;
   font-weight: 500;
-  margin-top: 8px;
 
   .highlight {
     color: #1f2937;
@@ -99,7 +104,7 @@ export const NameText = styled.p`
   font-size: 1rem;
   font-weight: 600;
   color: #000;
-  margin-top: -26px
+  margin-bottom: -px5;
 `;
 
 export const MutedText = styled.p`

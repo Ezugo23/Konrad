@@ -14,6 +14,7 @@ import {
   NameText,
   MutedText,
   FooterText,
+  MedText,
   FollowRow,
 } from "./Right.styled";
 
@@ -107,8 +108,8 @@ export default function Right() {
           <AvatarSmallRounded src={Twitter} alt="" />
           <div>
             <NameText>ITNEXT</NameText>
-            <MediumText>Publication</MediumText>
-            <SmallText mt="8px">
+            <MedText>Publication</MedText>
+            <SmallText>
               ITNEXT is a platform for IT developers & software ...
             </SmallText>
           </div>

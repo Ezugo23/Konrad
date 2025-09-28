@@ -9,6 +9,8 @@ import Chem from "../../assets/download (1).jpg"
 import Code from "../../assets/code.jpg"
 import Lab from "../../assets/lab.jpg"
 import PostItem from './postItem'
+import { ClappedText } from './postItem.styled'
+import { Emoji } from './postIcon'
 
 const posts = [
   {
@@ -82,7 +84,16 @@ export default function Body() {
   return (
     <>
       {posts.map((post, index) => (
-        <PostItem key={index} post={post} />
+        <div key={index}>
+          <PostItem post={post} />
+          
+          {/* Clapped text only for first post, outside the container */}
+          {post.id === "1" && (
+            <ClappedText>
+              <Emoji symbol="👋" dark /> <span>Trey Iwu</span> Clapped
+            </ClappedText>
+          )}
+        </div>
       ))}
     </>
   )
