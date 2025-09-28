@@ -41,9 +41,6 @@ export const Subtitle = styled.p`
 export const BodyContent = styled.div`
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: -20px;
-  align-items: flex-start;
 `;
 
 // Left text container
@@ -85,16 +82,20 @@ export const BodySubtitle = styled.p`
 
 // Image container
 export const ImageWrapper = styled.div`
-  margin-right: 13px;
+  margin-right: 11px;
+ 
   img {
     width: 5rem;
     height: 4rem;
     object-fit: cover;
+    margin-top: 20%;
     border-radius: 0.25rem;
+    
 
     @media (min-width: 640px) {
       width: 8rem;
       height: 6rem;
+       
     }
     @media (min-width: 768px) {
       width: 10rem;
