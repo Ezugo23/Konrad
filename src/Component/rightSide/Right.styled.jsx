@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: 1.75rem;
-  padding-right: 1.5rem; 
+  padding-right: 2rem; 
   display: none;
 
   @media (min-width: 768px) {

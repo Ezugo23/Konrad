@@ -139,7 +139,7 @@ export default function Right() {
 
       <FooterText>
         Help Status About Careers Press Blog Privacy Rules just one word Terms
-        Text to speech
+        Text to speech.
       </FooterText>
     </Wrapper>
   );
