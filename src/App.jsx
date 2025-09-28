@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Navbar from './Component/NavBar/navbar'
-import Header from './Component/Header/header'
+import Navbar from './Component/NavBar/Navbar'
+import Header from './Component/Header/Header'
 import Right from './Component/rightSide/Rights'
 
 function App() {
